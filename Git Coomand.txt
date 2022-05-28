@@ -1,0 +1,247 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS D:\NetBeansProjects\Plantkarts> ls
+
+
+    Directory: D:\NetBeansProjects\Plantkarts
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         5/28/2022  10:54 AM                build
+d-----         5/28/2022  10:26 AM                lib
+d-----         5/28/2022  10:24 AM                src
+d-----         5/28/2022  10:31 AM                test
+d-----         5/28/2022  12:47 PM                web
+-a----         5/28/2022  10:26 AM           3501 build.xml
+
+
+PS D:\NetBeansProjects\Plantkarts> git status
+Refresh index: 100% (67/67), done.
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   web/index.jsp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        build/
+        nbproject/private/
+        web/aboutus.jsp
+        web/contactus.jsp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\NetBeansProjects\Plantkarts> git log
+commit d6aa268de33dba6c1614abf96f0a04384906cfef (HEAD -> master)
+Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+Date:   Sat May 28 12:10:41 2022 +0600
+
+    Plantkarts
+PS D:\NetBeansProjects\Plantkarts> git add .
+warning: LF will be replaced by CRLF in web/index.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/EnterOTP.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/META-INF/context.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/WEB-INF/web.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/aboutus.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/admin.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/contactus.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/css/bootstrap.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/css/sweetalert.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/forgotPassword.jsp.
+warning: LF will be replaced by CRLF in build/web/index.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/js/bootstrap.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/js/jquery.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/js/main.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/login.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/logout.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/nav.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/newPassword.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/signup.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/slider.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/top.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in build/web/user.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in web/aboutus.jsp.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in web/contactus.jsp.
+The file will have its original line endings in your working directory
+PS D:\NetBeansProjects\Plantkarts> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   build/web/EnterOTP.jsp
+        new file:   build/web/META-INF/MANIFEST.MF
+        new file:   build/web/META-INF/context.xml
+        new file:   build/web/WEB-INF/classes/.netbeans_automatic_build
+        new file:   build/web/WEB-INF/classes/.netbeans_update_resources
+        new file:   build/web/WEB-INF/classes/Plantkartaction/LoginAction.class
+        new file:   build/web/WEB-INF/classes/Plantkartaction/SignUpAction.class
+        new file:   build/web/WEB-INF/classes/Plantkartbean/SignUpBean.class
+        new file:   build/web/WEB-INF/classes/Plantkartservlet/ForgotPasswordServlet$1.class
+        new file:   build/web/WEB-INF/classes/Plantkartservlet/ForgotPasswordServlet.class
+        new file:   build/web/WEB-INF/classes/Plantkartservlet/LoginServlet.class
+        new file:   build/web/WEB-INF/classes/Plantkartservlet/NewPasswordServlet.class
+        new file:   build/web/WEB-INF/classes/Plantkartservlet/SignUpServlet.class
+        new file:   build/web/WEB-INF/classes/Plantkartservlet/ValidateOtpServlet.class
+        new file:   build/web/WEB-INF/classes/dbconnection/PlantkartDBConnect.class
+        new file:   build/web/WEB-INF/lib/activation-1.1.jar
+        new file:   build/web/WEB-INF/lib/javax.mail-1.6.0.jar
+        new file:   build/web/WEB-INF/lib/mysql-connector-java-5.1.46.jar
+        new file:   build/web/WEB-INF/web.xml
+        new file:   build/web/aboutus.jsp
+        new file:   build/web/admin.jsp
+        new file:   build/web/contactus.jsp
+        new file:   build/web/css/bootstrap.css
+        new file:   build/web/css/sweetalert.css
+        new file:   build/web/forgotPassword.jsp
+        new file:   build/web/img/a-1.png
+        new file:   build/web/img/a-2.png
+        new file:   build/web/img/a-3.png
+        new file:   build/web/img/a-4.png
+        new file:   build/web/img/a-5.png
+        new file:   build/web/img/delete.png
+        new file:   build/web/img/email.png
+        new file:   build/web/img/login.png
+        new file:   build/web/img/logo.png
+        new file:   build/web/img/plantsforsell/Ageratum.jpg
+        new file:   build/web/img/plantsforsell/Beautybush.jpg
+        new file:   build/web/img/plantsforsell/Bee-Balm.jpg
+        new file:   build/web/img/plantsforsell/Black-eyed Susan.jpg
+        new file:   build/web/img/plantsforsell/Blue-Sage.jpg
+        new file:   build/web/img/plantsforsell/China-Pink.jpg
+        new file:   build/web/img/plantsforsell/Daylily.jpg
+        new file:   build/web/img/registration.png
+        new file:   build/web/img/whatsapp.png
+        new file:   build/web/index.jsp
+        new file:   build/web/js/bootstrap.js
+        new file:   build/web/js/jquery.js
+        new file:   build/web/js/jquery.min.js
+        new file:   build/web/js/main.js
+        new file:   build/web/js/sweetalert.min.js
+        new file:   build/web/login.jsp
+        new file:   build/web/logout.jsp
+        new file:   build/web/nav.jsp
+        new file:   build/web/newPassword.jsp
+        new file:   build/web/signup.jsp
+        new file:   build/web/slider.jsp
+        new file:   build/web/top.jsp
+        new file:   build/web/user.jsp
+        new file:   nbproject/private/private.properties
+        new file:   nbproject/private/private.xml
+        new file:   web/aboutus.jsp
+        new file:   web/contactus.jsp
+        modified:   web/index.jsp
+
+PS D:\NetBeansProjects\Plantkarts> git commit -m "Second commit"
+[master f07b435] Second commit
+ 63 files changed, 26830 insertions(+), 2 deletions(-)
+ create mode 100644 build/web/EnterOTP.jsp
+ create mode 100644 build/web/META-INF/MANIFEST.MF
+ create mode 100644 build/web/META-INF/context.xml
+ create mode 100644 build/web/WEB-INF/classes/.netbeans_automatic_build
+ create mode 100644 build/web/WEB-INF/classes/.netbeans_update_resources
+ create mode 100644 build/web/WEB-INF/classes/Plantkartaction/LoginAction.class
+ create mode 100644 build/web/WEB-INF/classes/Plantkartaction/SignUpAction.class
+ create mode 100644 build/web/WEB-INF/classes/Plantkartbean/SignUpBean.class
+ create mode 100644 build/web/WEB-INF/classes/Plantkartservlet/ForgotPasswordServlet$1.class
+ create mode 100644 build/web/WEB-INF/classes/Plantkartservlet/ForgotPasswordServlet.class
+ create mode 100644 build/web/WEB-INF/classes/Plantkartservlet/LoginServlet.class
+ create mode 100644 build/web/WEB-INF/classes/Plantkartservlet/NewPasswordServlet.class
+ create mode 100644 build/web/WEB-INF/classes/Plantkartservlet/SignUpServlet.class
+ create mode 100644 build/web/WEB-INF/classes/Plantkartservlet/ValidateOtpServlet.class
+ create mode 100644 build/web/WEB-INF/classes/dbconnection/PlantkartDBConnect.class
+ create mode 100644 build/web/WEB-INF/lib/activation-1.1.jar
+ create mode 100644 build/web/WEB-INF/lib/javax.mail-1.6.0.jar
+ create mode 100644 build/web/WEB-INF/lib/mysql-connector-java-5.1.46.jar
+ create mode 100644 build/web/WEB-INF/web.xml
+ create mode 100644 build/web/aboutus.jsp
+ create mode 100644 build/web/admin.jsp
+ create mode 100644 build/web/contactus.jsp
+ create mode 100644 build/web/css/bootstrap.css
+ create mode 100644 build/web/css/sweetalert.css
+ create mode 100644 build/web/forgotPassword.jsp
+ create mode 100644 build/web/img/a-1.png
+ create mode 100644 build/web/img/a-2.png
+ create mode 100644 build/web/img/a-3.png
+ create mode 100644 build/web/img/a-4.png
+ create mode 100644 build/web/img/a-5.png
+ create mode 100644 build/web/img/delete.png
+ create mode 100644 build/web/img/email.png
+ create mode 100644 build/web/img/login.png
+ create mode 100644 build/web/img/plantsforsell/Ageratum.jpg
+ create mode 100644 build/web/img/plantsforsell/Annual-Vinca.jpg
+ create mode 100644 build/web/img/plantsforsell/Beautybush.jpg
+ create mode 100644 build/web/img/plantsforsell/Bee-Balm.jpg
+ create mode 100644 build/web/img/plantsforsell/Black-eyed Susan.jpg
+ create mode 100644 build/web/img/plantsforsell/China-Pink.jpg
+ create mode 100644 build/web/img/plantsforsell/Daylily.jpg
+ create mode 100644 build/web/img/registration.png
+ create mode 100644 build/web/img/whatsapp.png
+ create mode 100644 build/web/index.jsp
+ create mode 100644 build/web/js/bootstrap.js
+ create mode 100644 build/web/js/jquery.js
+ create mode 100644 build/web/js/jquery.min.js
+ create mode 100644 build/web/js/main.js
+ create mode 100644 build/web/js/sweetalert.min.js
+ create mode 100644 build/web/login.jsp
+ create mode 100644 build/web/logout.jsp
+ create mode 100644 build/web/nav.jsp
+ create mode 100644 build/web/newPassword.jsp
+ create mode 100644 build/web/signup.jsp
+ create mode 100644 build/web/top.jsp
+ create mode 100644 build/web/user.jsp
+ create mode 100644 nbproject/private/private.properties
+ create mode 100644 nbproject/private/private.xml
+ create mode 100644 web/aboutus.jsp
+ create mode 100644 web/contactus.jsp
+PS D:\NetBeansProjects\Plantkarts> git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+PS D:\NetBeansProjects\Plantkarts> git push -u origin master
+Select an authentication method for 'https://github.com/':
+  1. Web browser (default)
+  2. Personal access token
+option (enter for default): 1
+info: please complete authentication in your browser...
+Enumerating objects: 121, done.
+Counting objects: 100% (121/121), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (112/112), done.
+Writing objects: 100% (121/121), 17.26 MiB | 542.00 KiB/s, done.
+Total 121 (delta 16), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (16/16), done.
+To https://github.com/NBikashChakma/Plantkarts.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS D:\NetBeansProjects\Plantkarts> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS D:\NetBeansProjects\Plantkarts>

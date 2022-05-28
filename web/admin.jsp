@@ -49,7 +49,9 @@
                     <th>NAME</th>
                     <th>MOBILE</th>
                     <th>PASSWORD</th>
+                    <th>ADDESS</th>
                     <th>DELETE</th>
+                    <th>UPDATE</th>
                 </tr>
 
                 <%
@@ -65,9 +67,11 @@
                     <td><%=rs.getString(2)%></td>
                     <td><%=rs.getString(3)%></td>
                     <td><%=rs.getString(4)%></td>
-                    <td><a href="#"><img src="img/delete.png" style="width:30px;height: 30px"/></a></td>
-                </tr>
-
+                    <td><%=rs.getString(5)%></td>
+                    <td><a href="DeletePersonServlet?email=<%=rs.getString(1)%>" onclick="return confirm('Are you sure want to delete?')"><img src="img/delete.png" style="width:30px;height: 30px"/></a></td>
+                    <td><button class="btn btn-success btn-sm">Update</button></td>
+                    </tr>
+                <!-- alert hle only ok button but confirm use this two button add cancel option-->
                 <%
                     i++;
                     }
@@ -79,10 +83,10 @@
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
                 <center>
-                    <a href="#" class="text-white" style="font-weight: 700">FAQ |</a>
-                    <a href="#" class="text-white" style="font-weight: 700">Register |</a>
-                    <a href="#" class="text-white" style="font-weight: 700">About US |</a>
-                    <a href="#" class="text-white" style="font-weight: 700">Contact Us</a><br>
+                    <!--                    <a href="#" class="text-white" style="font-weight: 700">FAQ |</a>
+                                        <a href="#" class="text-white" style="font-weight: 700">Register |</a>
+                                        <a href="#" class="text-white" style="font-weight: 700">About US |</a>
+                                        <a href="#" class="text-white" style="font-weight: 700">Contact Us</a><br>-->
                     <span class="text-white">&COPY; Plantkarts || 2019-2022</span><br>
                 </center>
             </div>

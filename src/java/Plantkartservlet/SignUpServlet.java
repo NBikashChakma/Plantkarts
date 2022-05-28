@@ -39,7 +39,7 @@ public class SignUpServlet extends HttpServlet {
         if (b == true) {
             response.sendRedirect("login.jsp");
         } else {
-            response.sendRedirect("error.");
+            response.sendRedirect("error.jsp");
         }
     }
 

@@ -46,12 +46,13 @@
             <ul class="nav navbar-nav">
                 <li class="nav-item"><a href="index.jsp" class="nav-link" style="color:white">Home</a></li> 
                 <li class="nav-item"><a class="nav-link" style="color:white">Service</a></li> 
-                <li class="nav-item"><a href="#" class="nav-link" style="color:white">Test</a></li> 
+                <li class="nav-item"><a class="nav-link" style="color:white">Gallery</a></li> 
+<!--                <li class="nav-item"><a href="#" class="nav-link" style="color:white">Test</a></li> 
                 <li class="nav-item"><a href="#" class="nav-link" style="color:white">Buy Lectures</a></li> 
                 <li class="nav-item"><a class="nav-link" style="color:white">Notes</a></li> 
-                <li class="nav-item"><a class="nav-link" style="color:white">Syllabus</a></li> 
+                <li class="nav-item"><a class="nav-link" style="color:white">Syllabus</a></li> -->
                 <li class="nav-item"><a class="nav-link" style="color:white">About Us</a></li> 
-                <li class="nav-item"><a class="nav-link" style="color:white">Contact Us</a></li> 
+<!--                <li class="nav-item"><a class="nav-link" style="color:white">Contact Us</a></li> -->
             </ul>
         </div>
     </nav>

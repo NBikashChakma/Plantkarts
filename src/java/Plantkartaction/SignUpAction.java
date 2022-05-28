@@ -18,12 +18,13 @@ import java.sql.ResultSet;
 public class SignUpAction {
 
     static Connection con = PlantkartDBConnect.getPlantkartDBConnection();
+
     public boolean signUpRegister(SignUpBean data) {
         boolean b = false;
         try {
 //            Connection con = PlantkartDBConnect.getPlantkartDBConnection();
             Statement smt = con.createStatement();
-            int i = smt.executeUpdate("insert into  signup values('" + data.getEmail() + "','" + data.getUser() + "','" + data.getMobile() + "','" + data.getPassword() + "')");
+            int i = smt.executeUpdate("insert into signup  (email,name,mobile,password)  values('" + data.getEmail() + "','" + data.getUser() + "','" + data.getMobile() + "','" + data.getPassword() + "')");
             if (i > 0) {
                 b = true;
             } else {
@@ -33,21 +34,27 @@ public class SignUpAction {
         }
         return b;
     }
-    
-    public ResultSet getCustomers()
-    {
-        ResultSet rs=null;
-        try
-        {
-            Statement smt=con.createStatement();
-            rs=smt.executeQuery("select * from signup");
-        }catch(Exception e){
+
+    public ResultSet getCustomers() {
+        ResultSet rs = null;
+        try {
+            Statement smt = con.createStatement();
+            rs = smt.executeQuery("select * from signup");
+        } catch (Exception e) {
         }
         return rs;
     }
 
-//    public boolean SignUpRegister(SignUpBean data) {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
+    public boolean deletePerson(String email) {
+        boolean b=false;
+        try {
+            Statement smt=con.createStatement();
+            int i=smt.executeUpdate("delete from signup where email='"+email+"'");
+            if(i<0)
+                b=true;
+        } catch (Exception e) {
+        }
+        return true;
+    }
 
 }

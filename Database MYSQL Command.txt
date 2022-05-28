@@ -1,0 +1,135 @@
+Enter password: ****************
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.17 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++----------------------------+
+| Database                   |
++----------------------------+
+| ark_group                  |
+| employee_management_system |
+| ems                        |
+| ems2                       |
+| ems31                      |
+| information_schema         |
+| login_page                 |
+| mysql                      |
+| performance_schema         |
+| sakila                     |
+| springschool               |
+| srm                        |
+| sys                        |
+| world                      |
++----------------------------+
+14 rows in set (0.29 sec)
+
+mysql> create database plantkarts;
+Query OK, 1 row affected (0.07 sec)
+
+mysql> use plantkarts;
+Database changed
+mysql> create table signup(email varchar(50) primary key,name varchar(50),mobile varchar(15) unique,password varchar(50));
+Query OK, 0 rows affected (0.19 sec)
+
+mysql> desc signup;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| email    | varchar(50) | NO   | PRI | NULL    |       |
+| name     | varchar(50) | YES  |     | NULL    |       |
+| mobile   | varchar(15) | YES  | UNI | NULL    |       |
+| password | varchar(50) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.03 sec)
+
+mysql> select * from signup;
+Empty set (0.22 sec)
+
+mysql> select * from signup;
++----------------------+---------------------+-------------+----------+
+| email                | name                | mobile      | password |
++----------------------+---------------------+-------------+----------+
+| bprealize1@gmail.com | Natun Bikash Chakma | 01516780307 | 1234     |
++----------------------+---------------------+-------------+----------+
+1 row in set (0.01 sec)
+
+mysql> select * from signup;
++----------------------+---------------------+--------------+----------+
+| email                | name                | mobile       | password |
++----------------------+---------------------+--------------+----------+
+| bprealize1@gmail.com | Natun Bikash Chakma | 01516780307  | 1234     |
+| tanmoy45@gmail.com   | Tanmoy Chakma       | 017307578546 | 12345    |
++----------------------+---------------------+--------------+----------+
+2 rows in set (0.02 sec)
+
+mysql> create table admin(email varchar(50) primary key,password varchar(50));
+Query OK, 0 rows affected (0.26 sec)
+
+mysql> insert into admin values('admin@123','admin@123');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from admin;
++-----------+-----------+
+| email     | password  |
++-----------+-----------+
+| admin@123 | admin@123 |
++-----------+-----------+
+1 row in set (0.00 sec)
+
+mysql> show databases;
++----------------------------+
+| Database                   |
++----------------------------+
+| ark_group                  |
+| employee_management_system |
+| ems                        |
+| ems2                       |
+| ems31                      |
+| information_schema         |
+| login_page                 |
+| mysql                      |
+| performance_schema         |
+| plantkarts                 |
+| sakila                     |
+| springschool               |
+| srm                        |
+| sys                        |
+| world                      |
++----------------------------+
+15 rows in set (0.12 sec)
+
+
+mysql> alter table signup add address varchar(70);
+Query OK, 0 rows affected (0.08 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc signup;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| email    | varchar(50) | NO   | PRI | NULL    |       |
+| name     | varchar(50) | YES  |     | NULL    |       |
+| mobile   | varchar(15) | YES  | UNI | NULL    |       |
+| password | varchar(50) | YES  |     | NULL    |       |
+| address  | varchar(70) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+5 rows in set (0.04 sec)
+
+
+mysql> select * from signup;
++----------------------+---------------+----------------+----------+---------+
+| email                | name          | mobile         | password | address |
++----------------------+---------------+----------------+----------+---------+
+| rakibcse37@gmail.com | Rakib Rowshon | +8801738765456 | 12345    | NULL    |
+| tanmoy45@gmail.com   | Tanmoy Chakma | +8801516754324 | 12345    | NULL    |
++----------------------+---------------+----------------+----------+---------+
+2 rows in set (0.00 sec)
