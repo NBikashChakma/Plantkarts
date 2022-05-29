@@ -1,0 +1,5 @@
+1:  Apache NetBeans using Software
+2: Java with Ant > Java Web > Web Application
+3: Project name: Plantkarts
+               > Jsp,Servlet
+4: Database: MYSQL
