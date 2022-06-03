@@ -251,4 +251,164 @@ On branch master
 Your branch is up to date with 'origin/master'.
 
 nothing to commit, working tree clean
-PS D:\NetBeansProjects\Plantkarts>
+
+
+********************************************************************************
+PS D:\NetBeansProjects\Plantkarts> git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+nothing to commit, working tree clean
+
+PS D:\NetBeansProjects\Plantkarts> git pull
+error: The following untracked working tree files would be overwritten by merge:
+        Project USING.txt
+Please move or remove them before you merge.
+Aborting
+
+PS D:\NetBeansProjects\Plantkarts> git pull -f
+error: The following untracked working tree files would be overwritten by merge:
+        Project USING.txt
+Please move or remove them before you merge.
+Aborting
+
+PS D:\NetBeansProjects\Plantkarts> git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+nothing to commit, working tree clean
+
+PS D:\NetBeansProjects\Plantkarts> git log
+Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+Date:   Fri Jun 3 12:13:55 2022 +0600
+
+    first commit
+
+Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+Date:   Sun May 29 12:17:13 2022 +0600
+
+    fourth commit
+
+commit d3328768a045c509f89cbd8d98e0311cdbaf7e9c
+Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+
+
+commit f07b435f557b25e516668041258f452dd3793816
+Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+Date:   Sat May 28 19:20:18 2022 +0600
+
+    Second commit
+
+commit d6aa268de33dba6c1614abf96f0a04384906cfef
+Date:   Sat May 28 12:10:41 2022 +0600
+
+    Plantkarts
+    
+PS D:\NetBeansProjects\Plantkarts> git rebase
+error: The following untracked working tree files would be overwritten by checkout:
+        Project USING.txt
+Please move or remove them before you switch branches.
+Aborting
+error: could not detach HEAD
+
+PS D:\NetBeansProjects\Plantkarts> git log --oneline --all
+7620a27 (HEAD -> master) first commit
+e558c22 fourth commit
+e8c24d3 (origin/master) Rename Project NAME.txt to Project USING.txt
+fa45681 Add files via upload
+d332876 Third commit
+f07b435 Second commit
+d6aa268 Plantkarts
+
+PS D:\NetBeansProjects\Plantkarts> git log --oneline --all --grapgh
+fatal: unrecognized argument: --grapgh
+
+PS D:\NetBeansProjects\Plantkarts> git log --oneline --all --graph
+* 7620a27 (HEAD -> master) first commit
+* e558c22 fourth commit
+| * e8c24d3 (origin/master) Rename Project NAME.txt to Project USING.txt
+| * fa45681 Add files via upload
+|/
+* d332876 Third commit
+* f07b435 Second commit
+* d6aa268 Plantkarts
+
+PS D:\NetBeansProjects\Plantkarts> git log --all --graph
+* commit 7620a27f6a13b880e9c466e62888dd837621a2ce (HEAD -> master)
+| Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+| Date:   Fri Jun 3 12:13:55 2022 +0600
+|
+| Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+| Date:   Fri Jun 3 12:13:55 2022 +0600
+|
+|     first commit
+* commit e558c22c61a546e3efcd992a9b1c0ae86f2d0224
+| Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+| Date:   Sun May 29 12:17:13 2022 +0600
+|
+|     fourth commit
+|
+| * commit e8c24d3319c0288295f01561e6bcb6fcf47a9675 (origin/master)
+| | Author: NBikashChakma <53782841+NBikashChakma@users.noreply.github.com>
+| | Date:   Sun May 29 01:50:37 2022 +0600
+| |     Rename Project NAME.txt to Project USING.txt
+| |
+| * commit fa4568140d6b836c0bce637b430252e1bc127285
+|/  Author: NBikashChakma <53782841+NBikashChakma@users.noreply.github.com>
+|   Date:   Sun May 29 01:49:58 2022 +0600
+|
+|       Add files via upload
+|
+* commit d3328768a045c509f89cbd8d98e0311cdbaf7e9c
+| Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+| Date:   Sun May 29 01:38:00 2022 +0600
+|
+|     Third commit
+
+PS D:\NetBeansProjects\Plantkarts> git pull -ff
+error: The following untracked working tree files would be overwritten by merge:
+        Project USING.txt
+Please move or remove them before you merge.
+Aborting
+
+PS D:\NetBeansProjects\Plantkarts> git push -f
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 805 bytes | 61.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/NBikashChakma/Plantkarts.git
+ + e8c24d3...7620a27 master -> master (forced update)
+ 
+PS D:\NetBeansProjects\Plantkarts> git log --all --graph
+* commit 7620a27f6a13b880e9c466e62888dd837621a2ce (HEAD -> master, origin/master)
+| Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+| Date:   Fri Jun 3 12:13:55 2022 +0600
+|
+|     first commit
+|
+* commit e558c22c61a546e3efcd992a9b1c0ae86f2d0224
+| Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+| Date:   Sun May 29 12:17:13 2022 +0600
+|
+|     fourth commit
+|
+* commit d3328768a045c509f89cbd8d98e0311cdbaf7e9c
+| Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+| Date:   Sun May 29 01:38:00 2022 +0600
+|
+|     Third commit
+|
+* commit f07b435f557b25e516668041258f452dd3793816
+| Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+| Date:   Sat May 28 19:20:18 2022 +0600
+|
+|     Second commit
+|
+* commit d6aa268de33dba6c1614abf96f0a04384906cfef
+  Author: Bikash <Bikash@DESKTOP-IR2N99P.mshome.net>
+  Date:   Sat May 28 12:10:41 2022 +0600
