@@ -20,7 +20,7 @@
                 <%@include file="top.jsp" %>
             </div>
             <%@include file="nav.jsp" %>
-            <div class="row mt-3">
+            <div class="row mt-1">
                 <div class="col-lg-4">
 
                 </div>
@@ -52,6 +52,19 @@
 
                 </div>
             </div>
+        </div>
+        <div class="row bg-info mt-4">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <center>
+                    <a href="#" class="text-white" style="font-weight: 700">FAQ |</a>
+                    <a href="#" class="text-white" style="font-weight: 700">Register |</a>
+                    <a href="aboutus.jsp" class="text-white" style="font-weight: 700">About US |</a>
+                    <a href="contactus.jsp" class="text-white" style="font-weight: 700">Contact Us</a><br>
+                    <span class="text-white">&COPY; Plantkarts || 2019-2022</span><br>
+                </center>
+            </div>
+            <div class="col-lg-3"></div>            
         </div>
         <!--            <script type="text/javascript">
                         var status = document.getElementById("status").value;

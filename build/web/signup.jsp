@@ -21,24 +21,24 @@
 
             <div class="row">
                 <div class="col-lg-3"> </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4 bg-dark mt-1">
                     <form  method="post" action="SignUpServlet">
-                        <fieldset class="border p-3">
-                            <legend class="w-auto">Sign Up</legend>
+                        <fieldset class="form-group border p-3">
+                            <legend class="w-auto" style="color:white">Sign Up</legend>
                             <div class="form-group">
-                                <label>Name</label>
+                                <label style="color:white">Name</label>
                                 <input type="text" name="user" class="form-control" required/>
                             </div>
                             <div class="form-group">
-                                <label>Mobile</label>
+                                <label style="color:white">Mobile</label>
                                 <input type="text" name="mobile" class="form-control" required/>
                             </div>
                             <div class="form-group">
-                                <label>Email</label>
+                                <label style="color:white">Email</label>
                                 <input type="email" name="email" class="form-control" required/>
                             </div>
                             <div class="form-group">
-                                <label>Password</label>
+                                <label style="color:white">Password</label>
                                 <input type="password" name="password" class="form-control" required/>
                             </div>
                             <!--                         <div class="form-group">
@@ -47,17 +47,27 @@
                                                      </div>-->
                             <div class="form-group">
                                 <input type="submit" value="sign Up" class="btn bg-success"/>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <input type="reset" value="Reset" class="btn bg-info"/> &nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="login.jsp">Already have an account? Login</a>
+                                <input type="reset" value="Reset" class="btn btn-warning"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="login.jsp" style="padding-left:5rem; color:white">Login</a>
                             </div>     
                         </fieldset>
                     </form>
                 </div>
             </div>
-
-
         </div>
-
+        <div class="row bg-info mt-3">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <center>
+                    <a href="#" class="text-white" style="font-weight: 700">FAQ |</a>
+                    <a href="#" class="text-white" style="font-weight: 700">Register |</a>
+                    <a href="aboutus.jsp" class="text-white" style="font-weight: 700">About US |</a>
+                    <a href="contactus.jsp" class="text-white" style="font-weight: 700">Contact Us</a><br>
+                    <span class="text-white">&COPY; Plantkarts || 2019-2022</span><br>
+                </center>
+            </div>
+            <div class="col-lg-3"></div>            
+        </div>
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
     </body>
