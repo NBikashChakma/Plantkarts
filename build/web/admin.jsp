@@ -30,6 +30,7 @@
                 } else {
                     response.sendRedirect("login.jsp");
                 }
+                String emailid=request.getParameter("email");
 
             %>
             <h1>Welcome : <%=email%></h1>
@@ -69,8 +70,8 @@
                     <td><%=rs.getString(4)%></td>
                     <td><%=rs.getString(5)%></td>
                     <td><a href="DeletePersonServlet?email=<%=rs.getString(1)%>" onclick="return confirm('Are you sure want to delete?')"><img src="img/delete.png" style="width:30px;height: 30px"/></a></td>
-                    <td><button class="btn btn-success btn-sm">Update</button></td>
-                    </tr>
+                    <td><a href="admin.jsp?email=<%=rs.getString(1)%>" class="btn btn-success btn-sm">Update</a></td>
+                </tr>
                 <!-- alert hle only ok button but confirm use this two button add cancel option-->
                 <%
                     i++;
@@ -78,6 +79,60 @@
                 %>
 
             </table>   
+                <%
+                    rs.beforeFirst();
+                    String id=null,name=null,mobile=null,address=null,password=null;
+                    while(rs.next())
+                    {
+                        if(rs.getString(1).equals(emailid))
+                        {
+                         id=rs.getString(1);
+                         name=rs.getString(2);
+                         mobile=rs.getString(3);
+                         password=rs.getString(4);
+                         address=rs.getString(5);
+                        }
+                    }
+                %>
+            <div id="update" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Update User</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" action="">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" value="<%=id%>" class="form-control" name="email"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" value="<%=name%>" class="form-control" name="user"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>Mobile</label>
+                                    <input type="text" value="<%=mobile%>" class="form-control" name="mobile"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" value="<%=password%>" class="form-control" name="pwd"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>Addess</label>
+                                    <input type="address" value="<%=address%>" class="form-control" name="address"/>
+                                </div>
+                                <input type="submit" value="Update User" class="btn btn-success"/>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>   
         </div>
         <div class="row bg-info mt-5">
             <div class="col-lg-3"></div>
@@ -95,5 +150,20 @@
 
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
+        <%
+            if(emailid!=null)
+            {
+                
+        %>
+        <script>
+                        $(document).ready(function ()
+                        {
+                            $("#update").modal('show');
+                        }
+                        );
+        </script>
+        <%
+            }
+        %>
     </body>
 </html>
