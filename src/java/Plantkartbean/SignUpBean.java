@@ -11,7 +11,7 @@ package Plantkartbean;
  */
 public class SignUpBean {
 
-    private String email, mobile, user, password;
+    private String email, mobile, user, password, address;
 
     /**
      * @return the email
@@ -67,6 +67,20 @@ public class SignUpBean {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     * @return the address
+     */
+    public String getAddress() {
+        return address;
+    }
+
+    /**
+     * @param address the address to set
+     */
+    public void setAddress(String address) {
+        this.address = address;
     }
 
 }

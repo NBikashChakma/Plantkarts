@@ -79,21 +79,21 @@
                 %>
 
             </table>   
-                <%
-                    rs.beforeFirst();
-                    String id=null,name=null,mobile=null,address=null,password=null;
-                    while(rs.next())
+            <%
+                rs.beforeFirst();
+                String id=null,name=null,mobile=null,address=null,password=null;
+                while(rs.next())
+                {
+                    if(rs.getString(1).equals(emailid))
                     {
-                        if(rs.getString(1).equals(emailid))
-                        {
-                         id=rs.getString(1);
-                         name=rs.getString(2);
-                         mobile=rs.getString(3);
-                         password=rs.getString(4);
-                         address=rs.getString(5);
-                        }
+                     id=rs.getString(1);
+                     name=rs.getString(2);
+                     mobile=rs.getString(3);
+                     password=rs.getString(4);
+                     address=rs.getString(5);
                     }
-                %>
+                }
+            %>
             <div id="update" class="modal">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -102,7 +102,7 @@
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div class="modal-body">
-                            <form method="post" action="">
+                            <form method="post" action="UpdateUserServlet">
                                 <div class="form-group">
                                     <label>Email</label>
                                     <input type="email" value="<%=id%>" class="form-control" name="email"/>

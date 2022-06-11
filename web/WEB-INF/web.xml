@@ -24,6 +24,10 @@
         <servlet-name>DeletePersonServlet</servlet-name>
         <servlet-class>Plantkartservlet.DeletePersonServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <servlet-class>Plantkartservlet.UpdateUserServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ForgotPasswordServlet</servlet-name>
         <url-pattern>/ForgotPasswordServlet</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>DeletePersonServlet</servlet-name>
         <url-pattern>/DeletePersonServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <url-pattern>/UpdateUserServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
