@@ -38,6 +38,10 @@
                                 <input type="email" name="email" class="form-control" required/>
                             </div>
                             <div class="form-group">
+                                <label style="color:white">Address</label>
+                                <input type="text" name="address" class="form-control" required/>
+                            </div>
+                            <div class="form-group">
                                 <label style="color:white">Password</label>
                                 <input type="password" name="password" class="form-control" required/>
                             </div>
@@ -47,8 +51,8 @@
                                                      </div>-->
                             <div class="form-group">
                                 <input type="submit" value="sign Up" class="btn bg-success"/>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <input type="reset" value="Reset" class="btn btn-warning"/> &nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="login.jsp" style="padding-left:5rem; color:white">Login</a>
+                                <!--                                <input type="reset" value="Reset" class="btn btn-warning"/> &nbsp;&nbsp;&nbsp;&nbsp;-->
+                                <p style="padding-top:1rem; color:white">If you already have an account?<a href="login.jsp" style="padding-left:1rem; color:red">Login</a></p>
                             </div>     
                         </fieldset>
                     </form>

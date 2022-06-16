@@ -24,7 +24,7 @@ public class SignUpAction {
         try {
 //            Connection con = PlantkartDBConnect.getPlantkartDBConnection();
             Statement smt = con.createStatement();
-            int i = smt.executeUpdate("insert into signup  (email,name,mobile,password)  values('" + data.getEmail() + "','" + data.getUser() + "','" + data.getMobile() + "','" + data.getPassword() + "')");
+            int i = smt.executeUpdate("insert into signup  (email,name,mobile,address,password)  values('" + data.getEmail() + "','" + data.getUser() + "','" + data.getMobile() + "','" + data.getAddress() + "','" + data.getPassword() + "')");
             if (i > 0) {
                 b = true;
             } else {
@@ -46,12 +46,13 @@ public class SignUpAction {
     }
 
     public boolean deletePerson(String email) {
-        boolean b=false;
+        boolean b = false;
         try {
-            Statement smt=con.createStatement();
-            int i=smt.executeUpdate("delete from signup where email='"+email+"'");
-            if(i<0)
-                b=true;
+            Statement smt = con.createStatement();
+            int i = smt.executeUpdate("delete from signup where email='" + email + "'");
+            if (i < 0) {
+                b = true;
+            }
         } catch (Exception e) {
         }
         return true;

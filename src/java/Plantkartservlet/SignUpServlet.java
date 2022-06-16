@@ -26,12 +26,14 @@ public class SignUpServlet extends HttpServlet {
         String email = request.getParameter("email");
         String mobile = request.getParameter("mobile");
         String name = request.getParameter("user");
+        String address = request.getParameter("address");
         String password = request.getParameter("password");
 
         SignUpBean data = new SignUpBean();
         data.setEmail(email);
         data.setMobile(mobile);
         data.setUser(name);
+        data.setAddress(address);
         data.setPassword(password);
 
         SignUpAction ac = new SignUpAction();

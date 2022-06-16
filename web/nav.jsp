@@ -34,25 +34,26 @@
     </div>
 </nav>-->
 <!--<div class="container-fluid">-->
-<div class="row">
+<!-- header-start -->
+<div class="row align-items-center">
     <nav role="navigation" class="navbar navbar-expand-lg navbar-light bg-dark" style="width: 100%">
-        <a href="#" class="navbar-brand">
-            <img src="img/logo.png" style="width: 80px;height:80px; border-radius: 100px;"><span class="text-info"> Plantkarts</span>
+        <a href="index.jsp" class="navbar-brand">
+            <img src="img/logo.png" style="width: 80px;height:60px; border-radius: 100px;"><span class="text-info"> Plantkarts</span>
         </a>
         <button class="navbar-toggler" type="button" data-target="#menu" data-toggle="collapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="menu">
             <ul class="nav navbar-nav">
-                <li class="nav-item"><a href="index.jsp" class="nav-link" style="color:white">Home</a></li> 
+                <!--                <li class="nav-item"><a href="index.jsp" class="nav-link" style="color:white">Home</a></li> -->
                 <li class="nav-item"><a class="nav-link" style="color:white">Service</a></li> 
                 <li class="nav-item"><a class="nav-link" style="color:white">Gallery</a></li> 
-<!--                <li class="nav-item"><a href="#" class="nav-link" style="color:white">Test</a></li> 
-                <li class="nav-item"><a href="#" class="nav-link" style="color:white">Buy Lectures</a></li> 
-                <li class="nav-item"><a class="nav-link" style="color:white">Notes</a></li> 
-                <li class="nav-item"><a class="nav-link" style="color:white">Syllabus</a></li> -->
+                <!--                <li class="nav-item"><a href="#" class="nav-link" style="color:white">Test</a></li> 
+                                <li class="nav-item"><a href="#" class="nav-link" style="color:white">Buy Lectures</a></li> 
+                                <li class="nav-item"><a class="nav-link" style="color:white">Notes</a></li> 
+                                <li class="nav-item"><a class="nav-link" style="color:white">Syllabus</a></li> -->
                 <li class="nav-item"><a class="nav-link" style="color:white">About Us</a></li> 
-<!--                <li class="nav-item"><a class="nav-link" style="color:white">Contact Us</a></li> -->
+                <li class="nav-item"><a class="nav-link" style="color:white">Contact Us</a></li> 
             </ul>
         </div>
     </nav>

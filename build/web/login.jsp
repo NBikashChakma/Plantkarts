@@ -33,7 +33,7 @@
                                 <input type="radio" name="person" value="admin" required/>&nbsp;Admin&nbsp;&nbsp;&nbsp;&nbsp;
                             </div>
                             <div class="form-group">
-                                <lebal>User</lebal>
+                                <lebal>Email</lebal>
                                 <input type="text" name="user" class="form-control" required/>
                             </div>
                             <div class="form-group">
@@ -43,7 +43,7 @@
                             <div class="form-group">
                                 <input type="submit" name="Log In" class="btn btn-success"/>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="forgotPassword.jsp">Forget Password</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="signup.jsp">Create an account</a>
+                                <p style="padding-top:1rem;">Don't have an account?<a href="signup.jsp"style="padding-left:1rem; color:red">Signup</a></p>
                             </div>
                         </fieldset>
                     </form>

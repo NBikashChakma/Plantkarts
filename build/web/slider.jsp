@@ -28,7 +28,7 @@
 
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="img/a-1.png" style="max-width: 100%; height: 600px" alt="First slide">
+            <img class="d-block w-100" src="img/a-1.png" style=" height: 500px" alt="First slide">
             <div class="carousel-caption  d-none d-md-block">
                 <h3>Herbs</h3>
                 <p>A variety of herbs are visible in this garden. Pictured is mint, along with some other herbs.</p>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/a-2.png" style="max-width: 100%; height: 600px" alt="Second slide">
+            <img class="d-block w-100" src="img/a-2.png" style="max-width: 100%; height: 500px" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
                 <h3>Shrub</h3>
                 <p>A shrub (often also called a bush) is a small-to-medium-sized perennial woody plant.</p>
@@ -44,7 +44,7 @@
         </div>
 
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/a-3.png" style="max-width: 100%; height: 600px" alt="Third slide">
+            <img class="d-block w-100" src="img/a-3.png" style="max-width: 100%; height: 500px" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
                 <h3>Tree</h3>
                 <p>In botany, a tree is a perennial plant with an elongated stem, or trunk, usually supporting branches and leaves.</p>
@@ -52,7 +52,7 @@
         </div>
 
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/a-4.png" style="max-width: 100%; height: 600px" alt="Third slide">
+            <img class="d-block w-100" src="img/a-4.png" style="max-width: 100%; height: 500px" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
                 <h3>Climbers</h3>
                 <p>Beans, Cucumber, Grapevine, Gourd, Jasmine, and Money Plant, are a few common examples of climbers.</p>
@@ -60,7 +60,7 @@
         </div>
 
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/a-5.png" style="max-width: 100%; height: 600px" alt="Third slide">
+            <img class="d-block w-100" src="img/a-5.png" style="max-width: 100%; height: 500px" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
                 <h3>Sunflowers</h3>
                 <p>Sunflowers are usually tall annual or perennial plants that in some species can grow to a height of 300 centimetres (120 inches) or more.</p>
